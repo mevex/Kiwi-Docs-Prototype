@@ -1,3 +1,3 @@
 # Kiwi Documentation
-  
-Welcome to the documentation.
+
+Welcome to the documentation!
