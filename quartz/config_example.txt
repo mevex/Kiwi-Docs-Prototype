@@ -1,0 +1,10 @@
+{
+  "title": "My Project Docs",
+  "source": "docs/content",
+  "destination": "docs/public",
+  "sidebar": [
+    {"title": "Home", "file": "index.md"},
+    {"title": "Installation", "file": "installation.md"},
+    {"title": "API", "file": "api.md"}
+  ]
+}
