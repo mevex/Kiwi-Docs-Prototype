@@ -18,7 +18,7 @@ jobs:
           node-version: '20' # Quartz needs Node
 
       - name: Install Quartz
-        run: npm install -g @quartzcorp/quartz
+        run: npm install -g quartz-site
 
       - name: Build site
         run: quartz build docs/content -o docs/public
