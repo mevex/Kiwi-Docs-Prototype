@@ -15,13 +15,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20' # Quartz needs Node
+          node-version: '20'
 
-      - name: Install Quartz
-        run: npm install -g quartz-site
-
-      - name: Build site
-        run: quartz build docs/content -o docs/public
+      - name: Run Quartz build
+        run: |
+          npx github:jackyzha0/quartz#main build --directory docs/content --output docs/public
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
