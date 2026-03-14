@@ -24,8 +24,8 @@ jobs:
       - name: Build site
         uses: konstfish/quartz-build-action@v6
         with:
-          source: docs/content       # your markdown source
-          destination: docs/public   # where output goes
+          source: content       # your markdown source
+          destination: public   # where output goes
           page_title: "My Docs"      # site title (optional)
 
       - name: Upload site artifact
