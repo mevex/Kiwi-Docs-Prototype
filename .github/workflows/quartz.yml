@@ -21,9 +21,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          sparse-checkout:
-          - content
-          - quartz
+          sparse-checkout: |
+            content
+            quartz
 
         # Prepares the VM environment for deployment
       - name: Setup Pages
