@@ -2,14 +2,11 @@ The project uses a minimal build system. It avoids IDE-specific tooling so the c
 
 To build the entire project, run `build-all.bat` from a command prompt configured for MSVC.
 
-```table-of-contents
-```
-
 # Build Instructions
 The following steps describe how to build the entire project after a fresh repository clone. A basic familiarity with the Windows command prompt is assumed.
 
 ## Configuring the Command Prompt
-To run MSVC (`cl`) from a command prompt, several environment variables must be set. Microsoft provides batch files to simplify this for the current command prompt session. 
+To run MSVC (`cl`) from a command prompt, several environment variables must be set. Microsoft provides batch files to simplify this for the current command prompt session.
 
 These batch files can be located in the Visual Studio installation folder, under `VC\Auxiliary\Build` (e.g. `C:\Program Files\MicrosoftVisual Studio \20**\VC\Auxiliary\Build`). Run `vcvars64.bat` to configure the environment for building an x64 version of the project.
 

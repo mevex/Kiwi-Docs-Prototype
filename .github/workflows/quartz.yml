@@ -24,6 +24,7 @@ jobs:
           sparse-checkout: |
             content
             quartz
+            assets
 
         # Prepares the VM environment for deployment
       - name: Setup Pages

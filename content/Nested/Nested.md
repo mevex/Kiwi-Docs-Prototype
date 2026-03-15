@@ -1,19 +1,11 @@
 ---
 title: Nested Page
-description: How to install the project
-tags:
-  - setup
-  - docs
 date: 2026-03-15
 
 draft: false
 publish: true
 
-permalink: /ins tall-wow/
-aliases:
-  - setup
-
-socialDescription: Quick installation guide
+socialDescription: Test Page
 socialImage: /assets/install-preview.png
 ---
 
