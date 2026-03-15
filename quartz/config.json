@@ -1,5 +1,5 @@
 {
-	"title": "My Project Docs",
+	"title": "Kiwi Docs",
 	"source": "content",
 	"destination": "public",
 	"sidebar": [
@@ -8,12 +8,12 @@
 			"file": "index.md"
 		},
 		{
-			"title": "Installation",
-			"file": "installation.md"
+			"title": "Build System",
+			"file": "BuildSystem.md"
 		},
 		{
-			"title": "API",
-			"file": "api.md"
+			"title": "Kiwi Docs",
+			"file": "KiwiDocs.md"
 		}
 	]
 }
