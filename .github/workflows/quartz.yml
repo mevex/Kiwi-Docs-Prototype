@@ -19,7 +19,7 @@ jobs:
     steps:
         # Downloads the repo on the VM
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           sparse-checkout: |
             content
@@ -38,7 +38,7 @@ jobs:
           page_title: "Kiwi Docs"   # website title
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v7
         with:
           path: public
 
