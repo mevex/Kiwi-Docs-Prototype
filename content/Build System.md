@@ -1,3 +1,9 @@
+---
+title: Build System
+aliases:
+	- Build
+---
+
 The project uses a minimal build system. It avoids IDE-specific tooling so the codebase can be built from any editor independently.
 
 To build the entire project, run `build-all.bat` from a command prompt configured for MSVC.
