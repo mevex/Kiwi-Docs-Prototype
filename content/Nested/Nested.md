@@ -16,6 +16,3 @@ This is a nested file!
 
 > [!tip]
 > You can deploy the documentation automatically using GitHub Actions.
-
-
-# ✨ Hi Shan! ❤
