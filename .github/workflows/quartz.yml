@@ -38,7 +38,7 @@ jobs:
           page_title: "Kiwi Docs"   # website title
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v7
+        uses: actions/upload-pages-artifact@v6
         with:
           path: public
 
