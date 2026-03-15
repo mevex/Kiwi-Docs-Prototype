@@ -1,8 +1,11 @@
 ---
 title: Nested Page
-draft: true
+draft: false
 ---
 
 # Title
 
 This is a nested file!
+
+
+# ✨ Hi Shan! ❤
