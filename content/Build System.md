@@ -1,7 +1,6 @@
 ---
 title: Build System
-aliases:
-	- Build
+alias: Build
 ---
 
 The project uses a minimal build system. It avoids IDE-specific tooling so the codebase can be built from any editor independently.
