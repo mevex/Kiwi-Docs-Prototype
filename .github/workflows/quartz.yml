@@ -20,11 +20,6 @@ jobs:
         # Downloads the repo on the VM
       - name: Checkout
         uses: actions/checkout@v6
-        with:
-          sparse-checkout: |
-            content
-            quartz
-            assets
 
         # Prepares the VM environment for deployment
       - name: Setup Pages
@@ -34,9 +29,10 @@ jobs:
       - name: Build
         uses: konstfish/quartz-build-action@v7
         with:
-          source: content           # your source
-          destination: public       # where output goes
-          page_title: "Kiwi Docs"   # website title
+          source: content                             # The directory to build from
+          destination: public                         # The directory to write output into
+          page_title: "Kiwi Docs"                     # Title of resulting Quartz Page
+          quartz_config: quartz/quartz.config.ts      # Path to custom Quartz config file
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
