@@ -1,4 +1,4 @@
-import { CustomOgImages } from "./quartz/plugins/emitters/ogImage"
+import { CustomOgImages, defaultImage } from "./quartz/plugins/emitters/ogImage"
 
 const config: QuartzConfig = {
 	plugins: {
