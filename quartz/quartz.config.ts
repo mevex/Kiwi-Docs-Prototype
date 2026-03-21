@@ -8,7 +8,7 @@ const config: QuartzConfig = {
 				width: 160, // width to generate with (in pixels)
 				height: 160, // height to generate with (in pixels)
 				excludeRoot: false, // wether to exclude "/" index path to be excluded from auto generated images (false = use auto, true = use default og image)
-				imageStructure: "/assets/install-preview.png", // custom image component to use
+				imageStructure: defaultImage, // custom image component to use
 			}),
 		],
 	},
