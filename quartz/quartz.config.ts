@@ -1,6 +1,9 @@
 import { CustomOgImages } from "./quartz/plugins/emitters/ogImage"
 
 const config: QuartzConfig = {
+	configuration: {
+		ignorePatterns: [],
+	},
 	plugins: {
 		transformers: [],
 		filters: [],
