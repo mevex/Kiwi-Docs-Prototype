@@ -7,7 +7,7 @@ const config: QuartzConfig = {
 		enableSPA: true,
 		enablePopovers: true,
 		analytics: null,
-		defaultDateType: "created",
+		defaultDateType: "modified",
 		theme: {
 			fontOrigin: "googleFonts",
 			cdnCaching: true,
@@ -54,6 +54,7 @@ const config: QuartzConfig = {
 		filters: [Plugin.RemoveDrafts()],
 		emitters: [
 			Plugin.AliasRedirects(),
+			Plugin.Assets(),
 			Plugin.ComponentResources(),
 			Plugin.ContentPage(),
 			Plugin.FolderPage(),
