@@ -46,46 +46,45 @@ const config: QuartzConfig = {
 				}
 			}
 		},
-		plugins: {
-			transformers: [
-				Plugin.CrawlLinks({
-					markdownLinkResolution: "shortest",
-					openLinksInNewTab: true,
-					lazyLoad: true,
-				}),
-				Plugin.FrontMatter(),
-				Plugin.CreatedModifiedDate({
-					priority: ["frontmatter", "git", "filesystem"],
-				}),
-				Plugin.SyntaxHighlighting({
-					theme: {
-						light: "github-light",
-						dark: "github-dark",
-					},
-					keepBackground: false,
-				}),
-				Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
-				Plugin.GitHubFlavoredMarkdown(),
-				Plugin.TableOfContents(),
-				Plugin.Description(),
-				Plugin.Latex({ renderEngine: "katex" }),
-			],
-			filters: [Plugin.RemoveDrafts()],
-			emitters: [
-				Plugin.AliasRedirects(),
-				Plugin.Assets(),
-				Plugin.ComponentResources(),
-				Plugin.ContentIndex(),
-				Plugin.ContentPage(),
-				Plugin.CustomOgImages(),
-				Plugin.FolderPage(),
-				Plugin.TagPage(),
-				Plugin.Static(),
-				Plugin.NotFoundPage(),
-			],
-		},
-	}
-
+	},
+	plugins: {
+		transformers: [
+			Plugin.CrawlLinks({
+				markdownLinkResolution: "shortest",
+				openLinksInNewTab: true,
+				lazyLoad: true,
+			}),
+			Plugin.FrontMatter(),
+			Plugin.CreatedModifiedDate({
+				priority: ["frontmatter", "git", "filesystem"],
+			}),
+			Plugin.SyntaxHighlighting({
+				theme: {
+					light: "github-light",
+					dark: "github-dark",
+				},
+				keepBackground: false,
+			}),
+			Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+			Plugin.GitHubFlavoredMarkdown(),
+			Plugin.TableOfContents(),
+			Plugin.Description(),
+			Plugin.Latex({ renderEngine: "katex" }),
+		],
+		filters: [Plugin.RemoveDrafts()],
+		emitters: [
+			Plugin.AliasRedirects(),
+			Plugin.Assets(),
+			Plugin.ComponentResources(),
+			Plugin.ContentIndex(),
+			Plugin.ContentPage(),
+			Plugin.CustomOgImages(),
+			Plugin.FolderPage(),
+			Plugin.TagPage(),
+			Plugin.Static(),
+			Plugin.NotFoundPage(),
+		],
+	},
 }
 
 export default config
