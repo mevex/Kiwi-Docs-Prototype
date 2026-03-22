@@ -16,14 +16,9 @@ const config: QuartzConfig = {
 			fontOrigin: "googleFonts",
 			cdnCaching: true,
 			typography: {
-				title: {
-					name: "Poppins",
-					weights: [800],
-					includeItalic: false,
-				},
 				header: {
 					name: "Poppins",
-					weights: [600],
+					weights: [700],
 					includeItalic: false,
 				},
 				body: "Roboto",
