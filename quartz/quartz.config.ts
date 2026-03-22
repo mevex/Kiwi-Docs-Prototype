@@ -9,15 +9,23 @@ const config: QuartzConfig = {
 		enableSitemap: true,
 		enableRSS: false,
 		analytics: null,
-		baseUrl: "mevex.github.io/Kiwi-Docs-Prototype/",
+		baseUrl: "mevex.github.io/Kiwi-Docs-Prototype",
 		ignorePatterns: [".obsidian"],
 		defaultDateType: "modified",
 		theme: {
 			fontOrigin: "googleFonts",
 			cdnCaching: true,
 			typography: {
-				title: "Roboto",
-				header: "Roboto",
+				title: {
+					name: "Poppins",
+					weights: [800],
+					includeItalic: false,
+				},
+				header: {
+					name: "Poppins",
+					weights: [600],
+					includeItalic: false,
+				},
 				body: "Roboto",
 				code: "JetBrains Mono",
 			},
