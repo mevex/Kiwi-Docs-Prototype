@@ -16,12 +16,9 @@ const config: QuartzConfig = {
 			fontOrigin: "googleFonts",
 			cdnCaching: true,
 			typography: {
-				header: {
-					name: "Poppins",
-					weights: [800],
-					includeItalic: false,
-				},
-				body: "Roboto",
+				title: "Poppins",
+				header: "Poppins",
+				body: "Poppins",
 				code: "JetBrains Mono",
 			},
 			colors: {
@@ -37,15 +34,15 @@ const config: QuartzConfig = {
 					textHighlight: "#fff23688",
 				},
 				darkMode: {
-					light: "#161618",
-					lightgray: "#393639",
+					light: "#161616",
+					lightgray: "#704d25",
 					gray: "#646464",
 					darkgray: "#d4d4d4",
-					dark: "#ebebec",
-					secondary: "#7b97aa",
-					tertiary: "#84a59d",
-					highlight: "rgba(143, 159, 169, 0.15)",
-					textHighlight: "#b3aa0288",
+					dark: "#ffffff",
+					secondary: "#a8d500",
+					tertiary: "rgba(168, 213, 0, 0.8)",
+					highlight: "rgba(168, 168, 168, 0.15)",
+					textHighlight: "rgba(168, 213, 0, 0.8)",
 				}
 			}
 		},
