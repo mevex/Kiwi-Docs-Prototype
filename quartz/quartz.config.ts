@@ -23,56 +23,67 @@ const config: QuartzConfig = {
 			},
 			colors: {
 				lightMode: {
-					light: "#2b2b2b",
-					// lightgray: "rgba(78, 78, 78, 1.0)",
-					lightgray: "rgba(255, 78, 78, 1.0)",
+					light: "#faf8f8",
+					lightgray: "#e5e5e5",
+					gray: "#b8b8b8",
+					darkgray: "#4e4e4e",
+					dark: "#2b2b2b",
+					secondary: "#284b63",
+					tertiary: "#84a59d",
+					highlight: "rgba(143, 159, 169, 0.15)",
+					textHighlight: "#fff23688",
 				},
 				darkMode: {
 					light: "#161618",
-					// lightgray: "rgb(57, 54, 57, 1.0)",
-					lightgray: "rgb(57, 255, 57, 1.0)",
+					lightgray: "#393639",
+					gray: "#646464",
+					darkgray: "#d4d4d4",
+					dark: "#ebebec",
+					secondary: "#7b97aa",
+					tertiary: "#84a59d",
+					highlight: "rgba(143, 159, 169, 0.15)",
+					textHighlight: "#b3aa0288",
 				}
 			}
-		}
-	},
-	plugins: {
-		transformers: [
-			Plugin.CrawlLinks({
-				markdownLinkResolution: "shortest",
-				openLinksInNewTab: true,
-				lazyLoad: true,
-			}),
-			Plugin.FrontMatter(),
-			Plugin.CreatedModifiedDate({
-				priority: ["frontmatter", "git", "filesystem"],
-			}),
-			Plugin.SyntaxHighlighting({
-				theme: {
-					light: "github-light",
-					dark: "github-dark",
-				},
-				keepBackground: false,
-			}),
-			Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
-			Plugin.GitHubFlavoredMarkdown(),
-			Plugin.TableOfContents(),
-			Plugin.Description(),
-			Plugin.Latex({ renderEngine: "katex" }),
-		],
-		filters: [Plugin.RemoveDrafts()],
-		emitters: [
-			Plugin.AliasRedirects(),
-			Plugin.Assets(),
-			Plugin.ComponentResources(),
-			Plugin.ContentIndex(),
-			Plugin.ContentPage(),
-			Plugin.CustomOgImages(),
-			Plugin.FolderPage(),
-			Plugin.TagPage(),
-			Plugin.Static(),
-			Plugin.NotFoundPage(),
-		],
-	},
-}
+		},
+		plugins: {
+			transformers: [
+				Plugin.CrawlLinks({
+					markdownLinkResolution: "shortest",
+					openLinksInNewTab: true,
+					lazyLoad: true,
+				}),
+				Plugin.FrontMatter(),
+				Plugin.CreatedModifiedDate({
+					priority: ["frontmatter", "git", "filesystem"],
+				}),
+				Plugin.SyntaxHighlighting({
+					theme: {
+						light: "github-light",
+						dark: "github-dark",
+					},
+					keepBackground: false,
+				}),
+				Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+				Plugin.GitHubFlavoredMarkdown(),
+				Plugin.TableOfContents(),
+				Plugin.Description(),
+				Plugin.Latex({ renderEngine: "katex" }),
+			],
+			filters: [Plugin.RemoveDrafts()],
+			emitters: [
+				Plugin.AliasRedirects(),
+				Plugin.Assets(),
+				Plugin.ComponentResources(),
+				Plugin.ContentIndex(),
+				Plugin.ContentPage(),
+				Plugin.CustomOgImages(),
+				Plugin.FolderPage(),
+				Plugin.TagPage(),
+				Plugin.Static(),
+				Plugin.NotFoundPage(),
+			],
+		},
+	}
 
 export default config
