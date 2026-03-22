@@ -1,6 +1,5 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-import { CustomOgImages } from "./quartz/plugins/emitters/ogImage"
 
 const config: QuartzConfig = {
 	configuration: {
@@ -8,6 +7,7 @@ const config: QuartzConfig = {
 		enableSPA: true,
 		enablePopovers: true,
 		analytics: null,
+		defaultDateType: "created",
 		theme: {
 			fontOrigin: "googleFonts",
 			cdnCaching: true,
