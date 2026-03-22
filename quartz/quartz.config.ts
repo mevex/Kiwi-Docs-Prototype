@@ -18,7 +18,7 @@ const config: QuartzConfig = {
 			typography: {
 				header: {
 					name: "Poppins",
-					weights: [700],
+					weights: [800],
 					includeItalic: false,
 				},
 				body: "Roboto",
