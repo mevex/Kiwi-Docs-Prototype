@@ -29,11 +29,11 @@ jobs:
       - name: Build
         uses: konstfish/quartz-build-action@v7
         with:
-          source: content                             # The directory to build from
-          destination: public                         # The directory to write output into
-          page_title: "Kiwi Docs"                     # Title of resulting Quartz Page
-          quartz_config: quartz/quartz.config.ts      # Path to custom Quartz config file
-          quartz_custom_css: quartz/quartz_custom.css # Path to custom Quartz config file
+          source: content                               # The directory to build from
+          destination: public                           # The directory to write output into
+          page_title: "Kiwi Docs"                       # Title of resulting Quartz Page
+          quartz_config: quartz/quartz.config.ts        # Path to custom Quartz config file
+          quartz_custom_css: quartz/quartz_custom.scss  # Path to custom Quartz config file
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
