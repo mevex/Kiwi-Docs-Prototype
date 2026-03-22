@@ -7,6 +7,7 @@ const config: QuartzConfig = {
 		enableSPA: true,
 		enablePopovers: true,
 		analytics: null,
+		ignorePatterns: [".obsidian"],
 		defaultDateType: "modified",
 		theme: {
 			fontOrigin: "googleFonts",
