@@ -6,7 +6,10 @@ const config: QuartzConfig = {
 		pageTitle: "Kiwi Documentation",
 		enableSPA: true,
 		enablePopovers: true,
+		enableSitemap: true,
+		enableRSS: false,
 		analytics: null,
+		baseUrl: "mevex.github.io/Kiwi-Docs-Prototype/",
 		ignorePatterns: [".obsidian"],
 		defaultDateType: "modified",
 		theme: {
@@ -34,9 +37,14 @@ const config: QuartzConfig = {
 	},
 	plugins: {
 		transformers: [
+			Plugin.CrawlLinks({
+				markdownLinkResolution: "shortest",
+				openLinksInNewTab: true,
+				lazyLoad: true,
+			}),
 			Plugin.FrontMatter(),
 			Plugin.CreatedModifiedDate({
-				priority: ["frontmatter", "filesystem"],
+				priority: ["frontmatter", "git", "filesystem"],
 			}),
 			Plugin.SyntaxHighlighting({
 				theme: {
@@ -48,7 +56,6 @@ const config: QuartzConfig = {
 			Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
 			Plugin.GitHubFlavoredMarkdown(),
 			Plugin.TableOfContents(),
-			Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
 			Plugin.Description(),
 			Plugin.Latex({ renderEngine: "katex" }),
 		],
@@ -57,7 +64,9 @@ const config: QuartzConfig = {
 			Plugin.AliasRedirects(),
 			Plugin.Assets(),
 			Plugin.ComponentResources(),
+			Plugin.ContentIndex(),
 			Plugin.ContentPage(),
+			Plugin.CustomOgImages(),
 			Plugin.FolderPage(),
 			Plugin.TagPage(),
 			Plugin.Static(),
