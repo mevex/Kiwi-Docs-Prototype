@@ -28,7 +28,7 @@ This is a nested file!
 
 Code block
 
-```
+```ts
 transformers: [
 	Plugin.CrawlLinks({
 		markdownLinkResolution: "shortest",
