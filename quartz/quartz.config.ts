@@ -16,9 +16,17 @@ const config: QuartzConfig = {
 			fontOrigin: "googleFonts",
 			cdnCaching: true,
 			typography: {
-				title: "Poppins",
-				header: "Poppins",
-				body: "Poppins",
+				title: "Outfit",
+				header: {
+					name: "Outfit",
+					weights: [400, 800],
+					includeItalic: false,
+				},
+				body: {
+					name: "Outfit",
+					weights: [400, 800],
+					includeItalic: false,
+				},
 				code: "JetBrains Mono",
 			},
 			colors: {

@@ -1,5 +1,22 @@
 @use "./base.scss";
 
-:not(pre)>code {
+:root[saved-theme="dark"] :not(pre)>code {
 	color: #fff;
+}
+
+:root[saved-theme="light"] :not(pre)>code {
+	color: #000;
+}
+
+:root {
+	--header-font-weight: 800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: var(--header-weight);
 }
