@@ -16,3 +16,24 @@ This is a nested file!
 
 > [!tip]
 > You can deploy the documentation automatically using GitHub Actions.
+
+> [!warning]
+> You can deploy the documentation automatically using GitHub Actions.
+
+> [!bug]
+> You can deploy the documentation automatically using GitHub Actions.
+
+> [!info]
+> You can deploy the documentation automatically using GitHub Actions.
+
+Code block
+
+```
+transformers: [
+	Plugin.CrawlLinks({
+		markdownLinkResolution: "shortest",
+		openLinksInNewTab: true,
+		lazyLoad: true,
+	}),
+]
+```
