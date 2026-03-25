@@ -1,15 +1,15 @@
 @use "./base.scss";
 
+:root {
+	--header-font-weight: 800;
+}
+
 :root[saved-theme="dark"] :not(pre)>code {
 	color: #fff;
 }
 
 :root[saved-theme="light"] :not(pre)>code {
 	color: #000;
-}
-
-:root {
-	--header-font-weight: 800;
 }
 
 h1,

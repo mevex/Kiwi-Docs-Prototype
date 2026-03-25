@@ -28,7 +28,7 @@ This is a **nested** file! **kiwi**
 
 Code block
 
-```ts
+```ts {3-5}
 transformers: [
 	Plugin.CrawlLinks({
 		markdownLinkResolution: "shortest",
