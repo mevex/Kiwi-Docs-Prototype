@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
 	configuration: {
-		pageTitle: "Kiwi Documentation",
+		pageTitle: "Kiwi Docs",
 		enableSPA: true,
 		enablePopovers: true,
 		enableSitemap: true,
@@ -31,15 +31,15 @@ const config: QuartzConfig = {
 			},
 			colors: {
 				lightMode: {
-					light: "#faf8f8",
-					lightgray: "#e5e5e5",
+					light: "#f2f2f2",
+					lightgray: "#ccc",
 					gray: "#b8b8b8",
-					darkgray: "#4e4e4e",
-					dark: "#2b2b2b",
-					secondary: "#284b63",
-					tertiary: "#84a59d",
-					highlight: "rgba(143, 159, 169, 0.15)",
-					textHighlight: "#fff23688",
+					darkgray: "#404040",
+					dark: "#303030",
+					secondary: "#88ad00",
+					tertiary: "#a8d500",
+					highlight: "rgba(255, 255, 255, 0.8)",
+					textHighlight: "rgba(168, 213, 0, 0.8)",
 				},
 				darkMode: {
 					light: "#161616",

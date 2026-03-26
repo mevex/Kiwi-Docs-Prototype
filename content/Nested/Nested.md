@@ -13,6 +13,8 @@ image: "assets/kiwi-logo.jpg"
 
 This is a **nested** file! **kiwi**
 
+Internal link [[Build System]]
+
 
 > [!tip]
 > You can deploy the documentation automatically using GitHub Actions.
