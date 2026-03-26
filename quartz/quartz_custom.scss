@@ -32,5 +32,5 @@ h6 {
 }
 
 :root[saved-theme="light"] .search>.search-button>p {
-	color: car(--darkgrey);
+	color: var(--darkgrey);
 }
