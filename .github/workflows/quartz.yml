@@ -36,6 +36,15 @@ jobs:
           quartz_icon: static/Favicon.png               # Path to custom Quartz config file
           quartz_custom_css: quartz/quartz_custom.scss  # Path to custom Quartz Page css
 
+      - name: Debug workspace
+        run: |
+          echo "Current path:"
+          pwd
+          echo "Full directory listing:"
+          ls -la
+          echo "Recursive view:"
+          ls -R
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
