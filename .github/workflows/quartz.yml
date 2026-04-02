@@ -46,9 +46,7 @@ jobs:
           ls -R
 
       - name: Overwrite default Quartz files
-        run: |
-          chmod -R u+w public
-          sudo cp -f static/og-image.png public/static/og-image.png
+        run: sudo cp -f static/og-image.png public/static/og-image.png
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
