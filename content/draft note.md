@@ -1,6 +1,6 @@
 ---
 title: Draft Note
-draft: false
+draft: true
 ---
 
 # Kiwi Documentation
