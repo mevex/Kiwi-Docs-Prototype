@@ -1,1 +1,6 @@
-content/.obsidian
+bin/
+references/
+resources/
+shaders/
+engine/externals/
+docs/content/.obsidian
