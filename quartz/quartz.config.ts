@@ -10,7 +10,7 @@ const config: QuartzConfig = {
 		enableRSS: false,
 		analytics: null,
 		baseUrl: "mevex.github.io/Kiwi-Docs-Prototype",
-		ignorePatterns: [".obsidian"],
+		ignorePatterns: [".obsidian", "drafts"],
 		defaultDateType: "modified",
 		theme: {
 			fontOrigin: "googleFonts",
@@ -73,13 +73,17 @@ const config: QuartzConfig = {
 				},
 				keepBackground: false,
 			}),
-			Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+			Plugin.ObsidianFlavoredMarkdown({
+				disableBrokenWikilinks: true
+			}),
 			Plugin.GitHubFlavoredMarkdown(),
 			Plugin.TableOfContents(),
 			Plugin.Description(),
-			Plugin.Latex({ renderEngine: "katex" }),
+			Plugin.Latex(),
 		],
-		filters: [Plugin.RemoveDrafts()],
+		filters: [
+			Plugin.RemoveDrafts()
+		],
 		emitters: [
 			Plugin.AliasRedirects(),
 			Plugin.Assets(),
@@ -87,6 +91,7 @@ const config: QuartzConfig = {
 			Plugin.ContentIndex(),
 			Plugin.ContentPage(),
 			Plugin.CustomOgImages(),
+			Plugin.Favicon(),
 			Plugin.FolderPage(),
 			Plugin.TagPage(),
 			Plugin.Static(),
