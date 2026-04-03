@@ -1,3 +1,5 @@
+![Kiwi logo](images/Logo+Logotipo.png)
+
 Welcome to the Kiwi Engine documentation.
 
 This documentation serves two purposes. First, it helps me quickly recall the structure and design of systems I haven’t worked on in a while. Second, it functions as regular technical documentation for the engine.

@@ -66,13 +66,7 @@ const config: QuartzConfig = {
 			Plugin.CreatedModifiedDate({
 				priority: ["frontmatter", "git", "filesystem"],
 			}),
-			Plugin.SyntaxHighlighting({
-				theme: {
-					light: "github-light",
-					dark: "github-dark",
-				},
-				keepBackground: false,
-			}),
+			Plugin.SyntaxHighlighting(),
 			Plugin.ObsidianFlavoredMarkdown({
 				disableBrokenWikilinks: true
 			}),

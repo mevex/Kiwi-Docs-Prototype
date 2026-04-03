@@ -1,4 +1,4 @@
-name: Build Quartz Site
+name: Build Docs Site
 
 on:
   push:
@@ -33,20 +33,12 @@ jobs:
           destination: public                           # The directory to write output into
           page_title: "Kiwi Docs"                       # Title of resulting Quartz Page
           quartz_config: quartz/quartz.config.ts        # Path to custom Quartz config file
-          quartz_icon: static/Favicon.png               # Path to custom Quartz config file
+          quartz_icon: quartz/Favicon.png               # Path to custom Quartz config file
           quartz_custom_css: quartz/quartz_custom.scss  # Path to custom Quartz Page css
 
-      - name: Debug workspace
-        run: |
-          echo "Current path:"
-          pwd
-          echo "Full directory listing:"
-          ls -la
-          echo "Recursive view:"
-          ls -R
-
-      - name: Overwrite default Quartz files
-        run: sudo cp -f static/og-image.png public/static/og-image.png
+        # Overwrite default Quartz files
+      #- name: Overwrite files
+      #  run: sudo cp -f static/og-image.png public/static/og-image.png
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
