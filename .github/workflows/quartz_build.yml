@@ -1,4 +1,4 @@
-name: Build Docs Site
+name: Quartz Build
 
 on:
   push:
