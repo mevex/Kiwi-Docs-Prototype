@@ -10,7 +10,7 @@ const config: QuartzConfig = {
 		enableRSS: false,
 		analytics: null,
 		baseUrl: "mevex.github.io/Kiwi-Docs-Prototype",
-		ignorePatterns: [".obsidian", "drafts"],
+		ignorePatterns: [".obsidian", "drafts", "templates"],
 		defaultDateType: "modified",
 		theme: {
 			fontOrigin: "googleFonts",
