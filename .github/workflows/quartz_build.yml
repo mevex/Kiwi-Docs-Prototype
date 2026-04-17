@@ -38,6 +38,7 @@ jobs:
           destination: docs/public                           # The directory to write output into
           page_title: "Kiwi Docs"                       # Title of resulting Quartz Page
           quartz_config: docs/quartz/quartz.config.ts        # Path to custom Quartz config file
+          quartz_layout: docs/quartz/quartz.layout.ts        # Path to custom Quartz config file
           quartz_icon: docs/quartz/Favicon.png               # Path to custom Quartz config file
           quartz_custom_css: docs/quartz/quartz_custom.scss  # Path to custom Quartz Page css
 
