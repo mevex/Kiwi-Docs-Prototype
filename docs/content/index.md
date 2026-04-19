@@ -2,9 +2,10 @@
 title: Kiwi Docs
 description: Home page of the Kiwi Game Engine documentation website.
 lang: en
-draft: true
+draft: false
 ---
 
+![Kiwi Logo|200](images/logo.png)
 
 Welcome to the Kiwi Engine documentation, a 3D game engine.
 
