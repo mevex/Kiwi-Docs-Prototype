@@ -10,3 +10,6 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 
 # Title
 This is the index.md page for this folder.
+
+# Title 2
+Some text here!
