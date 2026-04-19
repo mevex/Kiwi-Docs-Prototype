@@ -15,6 +15,11 @@ h6 {
 	font-weight: var(--header-font-weight);
 }
 
+img {
+	display: block;
+	margin: auto;
+}
+
 /* Dark Theme */
 
 :root[saved-theme="dark"] :not(pre)>code {
