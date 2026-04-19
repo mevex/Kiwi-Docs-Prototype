@@ -5,7 +5,7 @@ lang: en
 draft: true
 ---
 
-![Kiwi Logo|200](logo.png)
+![Kiwi Logo|200](images/logo.png)
 
 Welcome to the Kiwi Engine documentation, a 3D game engine.
 
@@ -24,6 +24,16 @@ The primary compiler supported is MSVC with permissive mode disabled in order to
 The engine is built as a DLL (or multiple DLLs later in development) that the game application (`.exe`) links against. The repository includes a dummy game called Testbed, used to test each feature as the engine evolves.
 
 Later in development, an editor application will be added. It is intended to run alongside the game and will link against the engine as well. Keeping the editor separate from the engine core avoids shipping editor code with the game.
+
+```mermaid
+flowchart BT
+	ENG("Engine (DLL)")
+	GAME("Game Application/Testbed (EXE)")
+	ED("Editor (EXE)")
+	GAME-->ENG
+	ED-->ENG
+	style ED stroke-dasharray: 10
+```
 
 # Feature List
 The following is a list of features and system implemented.
