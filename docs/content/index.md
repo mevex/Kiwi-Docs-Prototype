@@ -5,7 +5,7 @@ lang: en
 draft: false
 ---
 
-![Kiwi Logo|200](images/logo.png)
+![Kiwi Logo|200x69](images/logo.png)
 
 Welcome to the Kiwi Engine documentation, a 3D game engine.
 
