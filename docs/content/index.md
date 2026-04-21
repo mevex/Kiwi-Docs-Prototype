@@ -2,7 +2,7 @@
 title: Kiwi Docs
 description: Home page of the Kiwi Game Engine documentation website.
 lang: en
-draft: true
+draft: false
 ---
 
 ![Kiwi Logo](images/logo.png)
@@ -53,4 +53,4 @@ The following is a list of features and system implemented. A complete list of [
 
 ## Containers
 - **[[Dynamic Array]]**
-- **[[Linked List]]** 
+- **[[Linked List]]**
