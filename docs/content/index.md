@@ -7,6 +7,8 @@ draft: false
 
 ![Kiwi Logo](images/logo.png)
 
+---
+
 Welcome to the documentation of Kiwi Engine, a 3D game engine and learning project.
 
 This documentation serves two purposes. First, it helps me quickly recall the structure and design of systems I haven’t worked on in a while. Second, it functions as regular technical documentation for the engine.
