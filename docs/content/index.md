@@ -39,7 +39,7 @@ flowchart BT
 For more information on how the game should attach itself to the engine, see [[Entry Point and Game Types]]
 
 # Feature List
-The following is a list of features and system implemented. A complete list of [[tags/class]] is also available. For a complete list of all the classes see the [[tags/class|Classes]] page.
+The following is a list of features and system implemented. A complete list of [[tags/class]] is also available. For a complete list of all the classes see the [[tags/class|Classes]] page. And a list of folders [[nested/]] and [[nested/ | Nested Index]].
 
 - **[[Rendering]]:** Rendering system using Vulkan.
 - **[[Windows Platform Layer]]:** Provides APIs for windowing, memory allocation, console output and time.
