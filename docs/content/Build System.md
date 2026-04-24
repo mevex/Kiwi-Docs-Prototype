@@ -1,12 +1,9 @@
 ---
-title: Build System
-description: desc
+description: Step-by-step instructions to build the project and an in-depth look at the build system’s structure.
 lang: en
 draft: false
 aliases:
-  - build
-tags:
-  - misc
+  - Build
 ---
 The project uses a minimal build system. It avoids IDE-specific tooling so the codebase can be built from any environment independently.
 

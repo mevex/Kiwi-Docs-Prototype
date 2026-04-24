@@ -9,7 +9,7 @@ const config: QuartzConfig = {
 		enableSitemap: true,
 		enableRSS: false,
 		analytics: null,
-		baseUrl: "mevex.github.io/Kiwi-Docs-Prototype",
+		baseUrl: "mevex.github.io/Kiwi",
 		ignorePatterns: [".obsidian", "drafts", "templates"],
 		defaultDateType: "modified",
 		theme: {
